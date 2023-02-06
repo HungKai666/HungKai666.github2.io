@@ -1,0 +1,884 @@
+
+    /* banner开始 */
+    .banner_Div{/*定义flex布局*/
+        width: 100%;
+        display: flex;/*flex布局*/
+        flex-wrap: wrap;/*支持换行*/
+        background-image: url(../images/10005.jpg);
+        background-size: 1800px auto;
+    }
+    .banner_box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .banner_title{
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      text-align: center;
+    }
+    .banner_title h5{
+        width: 1200px;
+        text-align: center;
+        padding-top: 5px;
+        color: white;
+    }
+    .banner_box{
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .banner_left{
+        flex:1;
+    }
+    .banner_left img{
+      padding-bottom:30px ;
+      padding-top: 10px;
+      min-width: 400px;
+      max-width: 100%;
+    }
+    .banner_right{
+      flex:1;
+    }
+    .banner_right ul{
+      display: flex;
+      width: 450px;
+      min-width: 400px;
+      max-width: 100%;
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+    .banner_right ul li{
+      list-style-type: none;
+    }
+    .banner_right ul li a{
+      text-decoration: none;
+      color: #fff;
+      width: 80px;
+      display: block;
+      text-align: center;
+    }
+    .li1{
+      background-color: #C48E24;
+      padding: 5px 5px 5px 5px;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+    .li2{
+      background-color: #C8A564;
+      padding: 5px 5px 5px 5px;
+    }
+    .li3{
+      background-color: #949D24;
+      padding: 5px 5px 5px 5px;
+    }
+    .li4{
+      background-color: #C8A564;
+      padding-top: 5px;
+    }
+    .li5{
+      background-color: #83B38B;
+      padding: 5px 5px 5px 5px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+    /* banner结束 */
+    /* 导航开始 */
+    .bg-dark{
+      background-color: #005594!important;
+    }
+    .navbar-nav{
+      width: 1200px;
+      /* display: flex;
+      flex-wrap: wrap; */
+    }
+    /* .nav-link{
+      position: relative;
+    }
+    .second-menu{
+      position: absolute;
+      width: 130px;
+      height: 150px;
+      background-color: red;
+      display: none;
+    }
+    .nav-item a:hover div{
+      display: block;
+    } */
+    .navbar-nav li{
+      flex:1;
+    }
+    .navbar-nav li a{
+      color:#fff;
+    }
+    
+    /* 导航结束 */
+    /* 轮播图开始 */
+    .carousel-item img{
+        max-width: 100%;
+        height: auto;
+    }
+    /* 轮播图结束 */
+    /* 大板块开始 */
+    .content_Div{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      overflow-y: auto;
+      
+    }
+    .content_box{
+      width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      
+      height: 1200px;
+      margin: 0 auto;
+    }
+    /* 左侧开始 */
+    .content_left{
+      flex:6;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      
+    }
+    .content_right{
+      flex:3;
+      
+    }
+    .content_left_list1{
+      display: flex;
+      
+    }
+    .content_left_list1 .swiper{
+      flex:1;
+      padding-top: 50px;
+      width: 300px;
+    }
+    .content_left_list1 .news{
+      flex:1;
+      position: relative;
+      padding-left: 10px;
+    }
+    .news_title{
+      padding-top: 17px;
+    }
+    .news .news_title h3{
+      color: #005594;
+      border-bottom: 3px solid black;
+    }
+    .news .news_title .span1{
+      position: absolute;
+      right: 1px;
+      top:17px;
+      color: #005594;
+    }
+    .news_content span{
+      color: #005594;
+    }
+    .news_content p{
+      font-size: 10px;
+      padding-bottom: 10px;
+      border-bottom: 3px dashed rgb(141, 139, 139);
+    }
+    .news_list{
+      margin-left: -40px;
+    }
+    .news_list li{
+      font-size: 14px;
+      list-style-type: none;
+      line-height: 24px;
+    }
+   .news_list ul span{
+    float: right;
+   }
+   .content_left_list2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+   }
+   .notice{
+    flex:1;
+    
+   }
+   .special{
+    flex:1;
+    
+   }
+   /* list2开始 */
+   .notice{
+    margin-right: 5px;
+    
+   }
+   .notice_title{
+    position: relative;
+    height: 50px;
+    border-bottom:3px solid black;
+   }
+   .notice_title h3{
+    color: #005594;
+   }
+   .notice_title .span1{
+      position: absolute;
+      right: 1px;
+      top:15px;
+      color:#005594;
+   }
+   .notice_content ul{
+    margin-left: -40px;
+   }
+   .notice_content ul li{
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 40px;
+    border-bottom: 1px dashed rgb(139, 137, 137);
+   }
+   .notice_content ul li a{
+    text-decoration: none;
+    color: black;
+   }
+   .notice_content ul li span{
+    float: right;
+   }
+   .special_title{
+    height: 50px;
+    border-bottom: 3px solid black;
+   }
+   .special_content{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .special_content ul{
+    flex:1;
+    margin-left: -30px;
+   }
+   .special_content ul li{
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 40px;
+   }
+   .special_content ul li a{
+    color:black;
+    text-decoration: none;
+   }
+   /* list2结束 */
+   /* list3开始 */
+   .student_title{
+    height: 50px;
+    margin-top:40px;
+    border-bottom: 3px solid black;
+    position: relative;
+   }
+   .student_title{
+    color: #005594;
+   }
+   .student_title span{
+    position:absolute;
+    top:15px;
+    right: 2px;
+    color: #005594;
+   }
+   .student_img{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+   }
+   .student_img a{
+    flex:1;
+   
+   }
+   .student_img a img{
+    width: 190px;
+   }
+   /* list3结束 */
+   /* list4开始 */
+   .nav-tabs{
+    border-bottom: 3px solid black;
+    padding-bottom: 6px;
+    margin-left: -17px;
+    margin-top: 30px;
+   }
+   .nav-tabs .nav-link.active{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    color: #005594;
+   }
+   .nav-item a{
+    color: black;
+    font-size: 25px;
+   }
+   .condition_box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+   }
+   .condition_box a{
+    flex:1;
+    
+   }
+   .condition_box a img{
+    width: 190px;
+    height: auto;
+   }
+   *, ::after, ::before{
+    box-sizing: inherit;
+   }
+   /* list4结束 */
+    /* 左侧结束 */
+    /* 右侧开始 */
+    .school{
+      margin-top: 40px;
+      width: 150px;
+      height: 40px;
+      background-color: #7ECEF4;
+      margin-left:auto;
+      margin-right: auto;
+      border-radius: 100px;
+    }
+    .school h6{
+      text-align: center;
+      padding-top: 7px;
+    }
+    .school_title{
+      width: 300px;
+      margin: 0 auto;
+    }
+    .school_title h5{
+      float: left;
+      text-align: center;
+    }
+    .school_title h5 a{
+      text-decoration: none;
+      color: #005594;
+    }
+    /* 第一个开始 */
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list1{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -30px;
+      left:0px;
+      color: #005594;
+    }
+    .school_content .list1:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+    }
+    /* 第一个结束 */
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list2{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: -100px 0px;/*左右，上下*/
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:55px;
+      color: #005594;
+    }
+    .school_content .list2:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      background-position: -100px 0px;
+    }
+
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list3{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: -200px 0px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:55px;
+      color: #005594;
+    }
+    .school_content .list3:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      background-position: -200px 0px;
+    }
+
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list4{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: 0 -90px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:55px;
+      color: #005594;
+    }
+    .school_content .list4:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      
+    }
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list5{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: -100px -90px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:55px;
+      color: #005594;
+    }
+    .school_content .list5:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      
+    }
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list6{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: -200px -90px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:55px;
+      color: #005594;
+    }
+    .school_content .list6:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      
+    }
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list7{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: 0px -180px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:55px;
+      color: #005594;
+    }
+    .school_content .list7:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      
+    }
+
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list8{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: -100px -180px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:55px;
+      color: #005594;
+    }
+    .school_content .list8:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      
+    }
+    .school_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .school_content a{
+      position: relative;
+    }
+    .school_content .list9{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1.png);
+      background-size: 300px 270px;
+      background-position: -200px -180px;
+    }
+    .school_content a span{
+      text-decoration: none;
+      position: absolute;
+      bottom: -25px;
+      left:40px;
+      color: #005594;
+    }
+    .school_content .list9:hover{
+      width: 100px;
+      height: 90px;
+      margin-left: 25px;
+      margin-top: 25px;
+      
+      background-image: url(../images/school/1-1.png);
+      background-size: 300px 270px;
+      
+    }
+    /* list2开始 */
+    .content_right_list2{
+      
+      margin-top: 40px;
+    }
+    .href_title{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .href_title .title_box{
+      width: 3px;
+      height: 30px;
+      background-color: #005594;
+      padding-left: 10px;
+      margin-right: 10px;
+    }
+    .href_content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .href_content a{
+      width: 120px;
+      height: 30px;
+      margin-left: 5px;
+      margin-top: 5px;
+      display: block;
+      background-color: #7ECEF4;
+      text-align: center;
+      text-decoration: none;
+
+    }
+    .href_content a:hover{
+      background-color:#005594;
+    }
+    /* list2结束 */
+    /* list3开始 */
+    .exmine_title{
+      width: 100%;
+      display: flex;
+      margin-top: 30px;
+      background-color: #005594;
+      position: relative;
+    }
+    .exmine_title h5{
+      color: #fff;
+    }
+    .exmine_title span{
+      color: #fff;
+      position: absolute;
+      right: 2px;
+    }
+    /* list3结束 */
+    /* list4开始 */
+    .examine_content{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .examine_content ul{
+      margin-top: 20px;
+    }
+    .examine_content ul li{
+      list-style-type: none;
+      line-height: 45px;
+    }
+    .examine_content ul li a{
+      text-decoration: none;
+      color: #005594;
+    }
+    /* list4结束 */
+    /* 大板块结束 */
+    /* 第二个板块开始 */
+    .report_Div{
+      width: 100%;
+      background-repeat: no-repeat;
+      background-image: url(../images/swiper2/10004.png);
+      background-size: 1500px 500px;
+    }
+    .report_box{
+      display: flex;
+      flex-wrap: wrap;
+      width: 1200px;
+      max-width: 100%;
+      margin: 0 auto;
+      
+    }
+   .report_title{
+    margin-top: 20px;
+    width: 1200px;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+   }
+   .swiper2{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+   }
+   .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .quickly_banner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    margin-top: 30px;
+  }
+  .quickly_banner_title{
+    flex:1;
+    position: relative;
+  }
+  .quickly_banner_title h5{
+    position: absolute;
+    top: 30px;
+
+  }
+  .quickly_banner_content{
+    flex:9;
+    margin-left: -30px;
+  }
+  .quickly_banner_content ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .quickly_banner_content ul li{
+    width: 160px;
+    margin-left: -10px;
+    height: 50px;
+    
+    display: block;
+    text-align: center;
+  }
+  .quickly_banner_content ul li a{
+    text-decoration: none;
+  }
+  .friendly_Div{
+    width: 1200px;
+    margin-top: 30px;
+  }
+  .friendly_box{
+    width: 100%;
+  }
+  .friendly_box ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .friendly_box li{
+    list-style-type: none;
+    height: 50px;
+    padding-top: 30px;
+    flex:1;
+    display: block;
+    
+  }
+  .friendly_box li a{
+    text-decoration: none;
+    color: #005594;
+  }
+    /* 第二个板块结束 */
+/* footer开始 */
+.footer_Div{
+  width: 1500px;
+  max-width: 100%;
+  background-image: url(../images/footer/10003\ \(1\).jpg);
+}
+.foot_box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  max-width: 100%;
+}
+.foot_box .left{
+  flex:2;
+}
+.foot_box .center{
+  flex:4;
+}
+.foot_box .right{
+  flex:2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.center p{
+  text-align: center;
+  line-height: 10px;
+  color: #fff;
+}
+.right .gongzhonghao{
+  flex:1
+}
+.right .qiyeweixin{
+  flex:1;
+}
+.gongzhonghao{
+  padding-top: 30px;
+  
+}
+.qiyeweixin{
+  padding-top: 30px;
+}
+/* footer结束 */

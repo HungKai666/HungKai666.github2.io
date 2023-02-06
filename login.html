@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .loginDiv{
+        width: 100%;
+    }
+    .loginBox{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1095px;
+        max-width: 100%;
+        margin: 50px auto;
+    }
+    .login_left{
+        flex:1;
+    }
+    .login_right{
+        flex:1;
+        padding:5%;
+    }
+    .login_right h2{
+        padding-left: 140px;
+    }
+    .login_right input{
+        width: 90%;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .login_right button{
+        margin-left: 150px;
+        margin-top: 10px;
+        width: 100px;
+        background-color: aquamarine;
+        margin-bottom: 50px;
+    }
+   
+    #box{
+        margin-top: 15px;
+        width: 400px;
+        height: 15px;
+        background-color: aqua;
+        overflow-x:scroll;
+    }
+</style>
+<body>
+    <div class="loginDiv">
+        <div class="loginBox">
+            <div class="login_left"><img src="./images/login/login.png" alt=""></div>
+            <div class="login_right">
+                <h2>用户登陆</h2>
+                <input type="text" id="username" value="" placeholder="请输入9位数的学号"/><br>
+                <input type="password" id="password" value="" placeholder="请输入登陆密码"/><br>
+                <div id="box">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                <button id="submit" disabled onclick="loginIn()">登陆</button>
+                <br/>
+                <span><a href="">忘记密码</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        var submit=document.getElementById("submit");
+        var box=document.getElementById("box");
+        box.onscroll=function(){
+            if(box.scrollWidth-box.scrollLeft==box.clientWidth){
+                submit.disabled=false;
+            }
+        }
+    }
+    function loginIn(){
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        if(username=="" || password==""){
+            alert("用户名和密码不能为空");
+            return;
+        }
+        var reg=/^\d{9}$/;
+        if(!reg.test(username)){
+            alert("请输入9位数字的学号");
+            return;
+        }
+        var reg2=/^\d{6}$/;
+        if(!reg2.test(password)){
+            alert("请输入6位数字的密码");
+            return;
+        }
+            alert("登陆成功");
+            document.location.href="index.html";//自动跳转页面
+    }
+</script>
+</html>
